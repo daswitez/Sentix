@@ -8,11 +8,15 @@ import { LogisticsModule } from './components/LogisticsModule'
 import { OrdersModule } from './components/OrdersModule'
 import { ProcessingModule } from './components/ProcessingModule'
 import { TabsContent } from './components/ui/tabs'
+import { Analytics } from "@vercel/analytics/next"
+
 
 export default function App() {
   const [activeTab, setActiveTab] = useState('dashboard')
+  
 
   return (
+    
     <Layout activeTab={activeTab} onTabChange={setActiveTab}>
       <TabsContent value="dashboard">
         <Dashboard />
@@ -41,6 +45,7 @@ export default function App() {
       <TabsContent value="processing">
         <ProcessingModule />
       </TabsContent>
+      <Analytics/>
     </Layout>
   )
 }
