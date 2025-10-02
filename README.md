@@ -1,7 +1,7 @@
 
-  # patataHub (Community)
+  # Sentix
 
-  This is a code bundle for patataHub (Community). The original project is available at https://www.figma.com/design/dAkRnY0CjqpnPKP7pu5du1/patataHub--Community-.
+  Front-end funcional para el sistema centralizado y orquestacion de servicios
 
   ## Running the code
 
